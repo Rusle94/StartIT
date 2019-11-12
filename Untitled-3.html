@@ -1,30 +1,32 @@
-<DOCTYPE!>
-    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-    </head>
-
-    <body>
-        <p>Ferdighet 2 - Onclick => Kjøre funksjon som endrer innerHTML til element ut fra Id</p>
-        <h2 id="a1">AAAAAAAAAAAAAAAA</h1>
-            <h2 id="a2">AAAAAAAAAAAAAAAA</h2>
-            <h2 id="a3">AAAAAAAAAAAAAAAA</h3>
+<body>
+    <p>Ferdighet 2 - Onclick => Kjøre funksjon som endrer innerHTML til element ut fra Id</p>
 
 
-                <h2 onclick="doSomething()">test1</h1>
-                    <h2 onclick="doSomething()">test2</h2>
-                    <h2 onclick="doSomething()">test3</h3>
 
-                        <script>
-                            function doSomething() {
-                                document.getElementById('a1').innerHTML = 'hei';
-                                document.getElementById('a2').innerHTML = 'på';
-                                document.getElementById('a3').innerHTML = 'deg';
 
-                            }
-                        </script>
-    </body>
 
-    </html>
+
+    <h2 onclick="doSomethinga()" id="a1">Hva er 1+1?</h2>
+    <h2 onclick="doSomethingb()" id="a2">Hva er 2+2?</h2>
+    <h2 onclick="doSomethingc()" id="a3">Hva er 3+3?</h3>
+
+
+
+
+        <script>
+            function doSomethinga() {
+                document.getElementById('a1').innerHTML = '2';
+
+            }
+
+            function doSomethingb() {
+                document.getElementById('a2').innerHTML = '4';
+            }
+
+            function doSomethingc() {
+                document.getElementById('a3').innerHTML = '6';
+            }
+        </script>
+</body>
+
+</html>
